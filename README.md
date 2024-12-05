@@ -3,7 +3,7 @@ Reconhecimento Facial e Contador de Dedos
 
 Descrição 📑
 
-Este projeto combina tecnologias de Visão Computacional e Reconhecimento Facial com funcionalidades para contagem de dedos, ideal para aplicações que envolvem identificação de usuários e interação simplificada por gestos. Desenvolvido em Python utilizando a biblioteca OpenCV, o sistema realiza:
+Este projeto combina tecnologias de Visão Computacional e Reconhecimento Facial com funcionalidades para contagem de dedos, ideal para aplicações que envolvem identificação de usuários e interação simplificada por gestos. Desenvolvido em Python utilizando a biblioteca OpenCV e frameworks como o MediaPipe, o sistema realiza:
 
 1.	Cadastro e reconhecimento facial.
 2.	Contador de dedos reconhecidos, mostrando numeros e FPS na tela.
@@ -55,6 +55,8 @@ Arquivos e Estrutura do Projeto 📂
 
 4. Dedos_Reconhece.py
    
+   •	Utilizamos o framework MediaPipe, desenvolvido pela google de codigo aberto, para detectar imagens e videos.
+
    •	Usa algoritmos de rastreamento de mão (HandTrackingModule) para identificar dedos levantados.
 
    •	Mapeia o número de dedos levantados(0 a 5) e o numero de quadros por segundo (FPS).
@@ -62,7 +64,7 @@ Arquivos e Estrutura do Projeto 📂
    •	Se não reconhecer nenhum dedo por um tempo ou após reconhecer o numero for "0" fecha o programa.
 
 
-5. Recursos Adicionais
+6. Recursos Adicionais
    
    •	haarcascade_frontalface_default.xml: Algoritmo pré-treinado da OpenCV para detecção de rostos.
 
