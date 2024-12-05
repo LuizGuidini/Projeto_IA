@@ -3,7 +3,7 @@ Reconhecimento Facial e Contador de Dedos
 
 Descrição 📑
 
-Este projeto combina tecnologias de Visão Computacional e Reconhecimento Facial com funcionalidades para contagem de dedos, ideal para aplicações que envolvem identificação de usuários e interação simplificada por gestos. Desenvolvido em Python utilizando a biblioteca OpenCV, frameworks como o MediaPipe e o algoritmos de detecção de rostos haarcascade_frontalface, o sistema realiza:
+Este projeto combina tecnologias de Visão Computacional e Reconhecimento Facial com funcionalidades para contagem de dedos, ideal para aplicações que envolvem identificação de usuários e interação simplificada por gestos. Desenvolvido em Python utilizando a biblioteca OpenCV, frameworks como o MediaPipe e o algoritmo de detecção de rostos haarcascade_frontalface, o sistema realiza:
 
 1.	Cadastro e reconhecimento facial.
 2.	Contador de dedos reconhecidos, mostrando numeros e FPS na tela.
@@ -70,7 +70,7 @@ Arquivos e Estrutura do Projeto 📂
 
    •	HandTrackingModule: Módulo externo para rastreamento de mãos e contagem de dedos.
 
-   •	Pasta rostos_cadastrados/: Armazena imagens dos rostos registrados para comparação futura.
+   •	Arquivo rostos_cadastrados.csv : Armazena vetores de caracteristicas dos rostos registrados para comparação futura.
 
 
 ________________________________________
@@ -115,6 +115,9 @@ Tecnologias Utilizadas 🛠️
 
 •	HandTrackingModule: Rastreamento de mãos para contagem de dedos.
 
+•	MediaPipe: Framework desenvolvido pela google de codigo aberto, para detectar imagens e videos.
+
+
 
 ________________________________________
 Como Executar o Projeto ⬇️
@@ -129,13 +132,13 @@ Como Executar o Projeto ⬇️
 
 2. Clonar o Repositório
 
-         git clone https://github.com/SeuUsuario/ProjetoReconhecimentoFacial
+         git clone https://github.com/LuizGuidini/Projeto_IA
 
 3. Executar o Sistema
    
      1.	Navegue até a pasta do projeto:
 
-            cd ProjetoReconhecimentoFacial
+            cd Projeto_IA/Projeto
 
      2.	Inicie a aplicação:
 
@@ -153,6 +156,10 @@ Fluxo de Operação 🚀
 
 4.	Erro no Reconhecimento: Após 20 segundos, escolha cadastrar ou voltar.
 
+5. Para terminar o sistema a qualquer momento pressione "esc" ou "q"
+
+6. Para fechar o programa enquanto na tela que faz a contagem dos dedos basta fechar a mão indicando "0" 	
+
 
 ________________________________________
 Contribuição 🤝
@@ -162,7 +169,7 @@ Para contribuir com melhorias ou correções, sinta-se à vontade para abrir Iss
 ________________________________________
 Autores 🥇
 
-•	Márcia Guidini
+•	Marcia Guidini
 
 •	Luiz Guidini
 
